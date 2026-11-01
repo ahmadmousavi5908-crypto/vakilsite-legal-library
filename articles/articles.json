@@ -1,0 +1,105 @@
+{
+  "schema_version": "1.0.0",
+  "records": [
+    {
+      "id": "art_civil_code_1284",
+      "law_id": "law_civil_code",
+      "article_number": "1284",
+      "title": "تعریف سند",
+      "summary": "سند، هر نوشته‌ای است که در مقام دعوا یا دفاع قابل استناد باشد.",
+      "review_status": "secondary_source_only",
+      "exact_text_included": false,
+      "notes": "خلاصه آموزشی است، نه نقل کامل متن قانون."
+    },
+    {
+      "id": "art_civil_code_1287",
+      "law_id": "law_civil_code",
+      "article_number": "1287",
+      "title": "تعریف سند رسمی",
+      "summary": "اسناد تنظیم‌شده نزد اداره ثبت، دفتر اسناد رسمی یا مأمور رسمی در حدود صلاحیت و مطابق مقررات قانونی، رسمی شناخته می‌شوند.",
+      "review_status": "secondary_source_only",
+      "exact_text_included": false,
+      "notes": "خلاصه آموزشی است، نه نقل کامل متن قانون."
+    },
+    {
+      "id": "art_civil_code_1289",
+      "law_id": "law_civil_code",
+      "article_number": "1289",
+      "title": "اسناد عادی",
+      "summary": "سایر اسناد خارج از موارد ماده ۱۲۸۷، سند عادی محسوب می‌شوند.",
+      "review_status": "secondary_source_only",
+      "exact_text_included": false,
+      "notes": "خلاصه آموزشی است، نه نقل کامل متن قانون."
+    },
+    {
+      "id": "art_civil_code_1291",
+      "law_id": "law_civil_code",
+      "article_number": "1291",
+      "title": "موارد اعتبار سند عادی",
+      "summary": "ماده دو وضعیت قانونی را برای برخورداری سند عادی از اعتبار مقرر در آن بیان می‌کند؛ شرایط دقیق باید با متن رسمی تطبیق شود.",
+      "review_status": "secondary_source_only",
+      "exact_text_included": false,
+      "notes": "خلاصه آموزشی است، نه نقل کامل متن قانون."
+    },
+    {
+      "id": "art_civil_code_1292",
+      "law_id": "law_civil_code",
+      "article_number": "1292",
+      "title": "انکار و تردید نسبت به سند رسمی",
+      "summary": "در برابر سند رسمی یا سند دارای اعتبار رسمی، انکار و تردید مسموع نیست؛ ادعای جعل یا اثبات زوال اعتبار قانونی مطرح است.",
+      "review_status": "secondary_source_only",
+      "exact_text_included": false,
+      "notes": "خلاصه آموزشی است، نه نقل کامل متن قانون."
+    },
+    {
+      "id": "art_commercial_code_307",
+      "law_id": "law_commercial_code",
+      "article_number": "307",
+      "title": "تعریف فته‌طلب",
+      "summary": "ماده، فته‌طلب را سندی می‌داند که امضاکننده به موجب آن پرداخت مبلغی را در موعد معین یا عندالمطالبه تعهد می‌کند.",
+      "review_status": "secondary_source_only",
+      "exact_text_included": false,
+      "notes": "خلاصه آموزشی است، نه نقل کامل متن قانون."
+    },
+    {
+      "id": "art_commercial_code_308",
+      "law_id": "law_commercial_code",
+      "article_number": "308",
+      "title": "مندرجات سفته",
+      "summary": "ماده به امضا یا مهر، تاریخ، مبلغ با تمام حروف، گیرنده وجه و تاریخ پرداخت اشاره دارد.",
+      "review_status": "secondary_source_only",
+      "exact_text_included": false,
+      "notes": "خلاصه آموزشی است، نه نقل کامل متن قانون."
+    },
+    {
+      "id": "art_commercial_code_309",
+      "law_id": "law_commercial_code",
+      "article_number": "309",
+      "title": "تسری مقررات برات به فته‌طلب",
+      "summary": "مقررات مربوط به بروات تجارتی در مورد فته‌طلب نیز لازم‌الرعایه است؛ مقررات قابل اعمال باید موردی بررسی شود.",
+      "review_status": "secondary_source_only",
+      "exact_text_included": false,
+      "notes": "خلاصه آموزشی است، نه نقل کامل متن قانون."
+    },
+    {
+      "id": "art_commercial_code_310",
+      "law_id": "law_commercial_code",
+      "article_number": "310",
+      "title": "تعریف چک در قانون تجارت",
+      "summary": "ماده ۳۱۰ قانون تجارت تعریفی از چک ارائه می‌کند؛ برای آثار امروزی چک باید قانون صدور چک و اصلاحات بعدی نیز بررسی شود.",
+      "review_status": "secondary_source_only",
+      "exact_text_included": false,
+      "notes": "خلاصه آموزشی است، نه نقل کامل متن قانون."
+    },
+    {
+      "id": "art_compulsory_registration_01",
+      "law_id": "law_compulsory_real_estate_registration",
+      "article_number": "1",
+      "title": "الزام به ثبت رسمی اعمال حقوقی معین",
+      "summary": "ماده ۱ ثبت رسمی دسته‌ای از اعمال حقوقی مرتبط با اموال غیرمنقول را مقرر و برای عدم ثبت آثار مهمی پیش‌بینی کرده است. اعمال حکم به زمان اجرا، راه‌اندازی سامانه ماده ۱۰، استثناها و مقررات اجرایی وابسته است.",
+      "review_status": "secondary_source_only",
+      "exact_text_included": false,
+      "notes": "خلاصه آموزشی است، نه نقل کامل متن قانون."
+    }
+  ]
+}
