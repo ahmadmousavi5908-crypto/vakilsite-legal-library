@@ -1,6 +1,6 @@
 {
   "name": "Iranian Legal Research Library",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "schema_version": "1.0.0",
   "language": "fa-IR",
   "jurisdiction": "IR",
@@ -19,7 +19,7 @@
   "counts": {
     "terms": 45,
     "laws": 16,
-    "articles": 13
+    "articles": 22
   },
   "review_policy": "All legal records require review unless explicitly verified against primary sources. Not legal advice.",
   "runtime": "Python 3 standard library only; no npm packages."
