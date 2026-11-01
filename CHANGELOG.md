@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.2.0 - 2026-11-01
+- Added nine Registration Law article summaries covering compulsory registration, evidentiary effects, unregistered property, urban partition and cadastral mapping.
+- Added references from core property terms to the new article records.
+- Recorded the interpretive distinction in Advisory Opinion 7/1402/792 concerning Article 88.
+
 ## 1.1.0 - 2026-11-01
 - Added source-review findings for the phased launch of the Article 10 claim-registration system.
 - Clarified that Article 1 consequences must be assessed by property document date and the officially announced launch scope.
