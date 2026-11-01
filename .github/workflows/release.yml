@@ -1,13 +1,16 @@
 name: Build legal library release
 
 on:
+  pull_request:
+    branches:
+      - main
   push:
     tags:
       - "v*"
   workflow_dispatch:
     inputs:
       version:
-        description: "Release version, for example 1.1.0"
+        description: "Release version, for example 1.2.1"
         required: true
         type: string
 
@@ -30,6 +33,7 @@ jobs:
         run: python3 tools/build_release.py dist
 
       - name: Publish GitHub release
+        if: github.event_name != 'pull_request'
         env:
           GH_TOKEN: ${{ github.token }}
           INPUT_VERSION: ${{ inputs.version }}
