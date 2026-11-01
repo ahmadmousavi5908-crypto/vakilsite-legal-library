@@ -2,66 +2,56 @@
 
 A versioned, structured Persian-language legal research dataset for Iranian law.
 
-## Scope of v1
+## Version 1.0.0 scope
 
-- Real-estate registration and property transactions (priority)
-- Cheques and promissory notes (included in v1)
-- Civil law and civil procedure
-- General and specific criminal law
-- Criminal procedure and criminology
+- **Registration and real estate:** priority area, including official and ordinary documents, title deeds, cadastral mapping, parcel identifiers, unregistered property, registration claims and property boundaries.
+- **Cheques and commercial instruments:** included from the first version, including Sayad cheques, registration and transfer, non-payment certificates, promissory notes (سفته), required particulars and protest (واخواست).
+- Civil law and civil procedure.
+- General and specific criminal law, criminal procedure and criminology.
 
-## Design principles
-
-1. Data only: no runtime, npm dependencies, build step, or website integration.
-2. Stable identifiers; canonical terms are separate from aliases and search phrases.
-3. Every legal proposition records its source and review status.
-4. Unverified legal content is explicitly marked and must not be presented as definitive advice.
-5. Similar legal concepts are not merged merely because users search for them interchangeably.
-6. Persian text is UTF-8; JSON uses two-space indentation.
+Initial content: 45 terms, 16 law records and 10 article summaries.
 
 ## Repository layout
 
-- `terms/`: canonical terms, aliases, search phrases and short definitions.
-- `laws/`: law metadata and source references.
-- `articles/`: article-level records and cautious summaries.
-- `taxonomy/`: stable subject taxonomy.
-- `relations/`: links between terms, laws and articles.
-- `schema/`: JSON Schema contracts.
-- `validation/`: validation policy and Termux-friendly validator.
-- `reports/`: review and duplicate reports.
+- `terms/terms.json`: canonical terms, search titles, aliases, definitions and legal references.
+- `laws/laws.json`: law metadata, source links and review status.
+- `articles/articles.json`: article-level summaries linked to their parent law.
+- `taxonomy/categories.json`: stable subject categories and educational tags.
+- `relations/legal-content-links.json`: links between terms and legal provisions.
+- `schema/record-contracts.json`: JSON Schema contracts for core records.
+- `validation/validate_library.py`: local structural and reference validator.
+- `reports/source-review.json`: source discovery and review limitations.
+- `MANIFEST.json`: version, file inventory and record counts.
 
 ## Termux validation
 
-Python 3 standard library only; no pip install required.
+Python 3 standard library only. No pip install, npm install, build step or website integration is required.
+
+From the extracted repository directory, run:
 
 ```sh
 python validation/validate_library.py
 ```
 
-The validator checks JSON parsing, required fields, unique IDs, duplicate canonical terms, and references between records. It does not certify the legal correctness or current force of a law.
+The validator checks JSON parsing, unique IDs, duplicate canonical terms and cross-references. It does **not** certify legal correctness, the current validity of legislation, completeness of amendments or the current operation of government systems.
 
 ## Legal review policy
 
 - `verified_primary_source`: checked against an official primary publication for the stated point.
-- `secondary_source_only`: located in a secondary legal source; requires primary-source confirmation.
-- `needs_legal_review`: editorial or legal review remains.
+- `secondary_source_only`: located in a secondary legal source; primary-source confirmation remains necessary.
+- `needs_legal_review`: legal or editorial review remains.
 - `draft`: incomplete record.
 
 A law's enactment date, publication date, effective date, amendments, transitional rules and implementing regulations are distinct facts. Do not infer one from another.
 
-## Sources and research
+## Source policy
 
-Primary-source discovery should prioritize the Official Gazette and the National Laws and Regulations System. Secondary repositories are used for discovery and cross-checking, not as a substitute for the official text.
+Primary-source verification must prioritize the Official Gazette and the National Laws and Regulations System. Secondary repositories are used for discovery and cross-checking, not as a substitute for official texts.
 
-Initial discovery references:
-- Official Gazette issue metadata for the Law on Compulsory Official Registration of Transactions Concerning Immovable Property: https://www.irancodify.com/b/قانون_الزام_به_ثبت_رسمی_معاملات_اموال_غیرمنقول_مصوب_1401-09-06
-- Law text and registration-law materials: https://law-ir.ir/law/cat/2036/
-- Civil Code, document provisions (Arts. 1284 onward): https://adlio.ir/law/قانون-مدنی-مصوب-1307-02-18/
-- Commercial Code, promissory note provisions (Arts. 307-309): https://adlio.ir/law/قانون-تجارت-مصوب-1311-02-13/
-- Cheque law research entry point: https://lawlex.ir/
+The current source-review report explicitly records the limitations of the initial research. In particular, cheque-law deadlines, criminal consequences, Sayad-system rules and the implementation timeline of the compulsory real-estate registration law are not presented as fully verified in this release.
 
-The initial source list is a research log, not a representation that every law has been fully consolidated as of the release date.
+## Safety and use
 
-## Version
+This repository is a research dataset, not legal advice and not a substitute for checking the current official text before advising a client, drafting a pleading or calculating a deadline. Similar concepts are kept separate unless their legal equivalence is established.
 
-Initial structured foundation: 1.0.0
+The repository is data-only and is not connected to the Vakilsite production website. Do not copy these files into the website project until a separate integration review is approved.
