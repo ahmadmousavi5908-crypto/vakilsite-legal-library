@@ -21,7 +21,7 @@
       "status": "needs_consolidation_review",
       "review_status": "secondary_source_only",
       "source_url": "https://adlio.ir/law/قانون-تجارت-مصوب-1311-02-13/",
-      "notes": "مواد ۳۰۷ تا ۳۱۰ برای سفته و چک به عنوان نقطه شروع ثبت شده‌اند."
+      "notes": "مواد ۳۰۷ تا ۳۰۹ درباره فته‌طلب و مواد ۳۱۰ به بعد درباره چک بررسی اولیه شده‌اند؛ متن رسمی و مقررات خاص بعدی باید پیش از نظر حقوقی تطبیق شوند."
     },
     {
       "id": "law_compulsory_real_estate_registration",
@@ -32,7 +32,7 @@
       "status": "needs_consolidation_review",
       "review_status": "secondary_source_only",
       "source_url": "https://law-ir.ir/law/cat/2036/",
-      "notes": "انتشار در روزنامه رسمی شماره ۲۳۰۶۸ مورخ ۱۴۰۳/۰۳/۱۷ گزارش شده؛ وضعیت اجرا، سامانه ماده ۱۰ و مقررات اجرایی باید جداگانه از مرجع رسمی احراز شود."
+      "notes": "متن و گزارش‌های اجرای مرحله‌ای سامانه ماده ۱۰ بررسی شده‌اند؛ وضعیت هر ملک باید با تاریخ صدور سند حدنگار و دامنه اعلام رسمی سامانه سنجیده شود. متن تنقیحی و بخشنامه راه‌اندازی باید از روزنامه رسمی/قوه قضاییه مستقلاً نگهداری شود."
     },
     {
       "id": "law_registration_law",
@@ -50,9 +50,9 @@
       "jurisdiction": "IR",
       "law_type": "statute_or_code",
       "status": "needs_consolidation_review",
-      "review_status": "needs_legal_review",
-      "source_url": "https://lawlex.ir/",
-      "notes": "به علت اصلاحات متعدد، مواعد و آثار سامانه صیاد در این نسخه قطعی اعلام نشده‌اند؛ متن جاری باید ماده‌به‌ماده تطبیق شود."
+      "review_status": "secondary_source_only",
+      "source_url": "https://law-ir.ir/law/cat/1692/",
+      "notes": "متن تجمیعی در منبع ثانویه، اصلاحات ۱۳۹۷ و اصلاحیه ۱۴۰۰/۰۱/۲۹ را نشان می‌دهد. پیش از اعلام مواعد یا آثار کیفری باید مواد مربوط و آیین‌نامه‌های جاری با روزنامه رسمی و منابع بانک مرکزی تطبیق شوند."
     },
     {
       "id": "law_partition",
