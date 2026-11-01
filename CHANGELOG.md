@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.2.1 - 2026-11-01
+- Fixed release packaging so MANIFEST.json is included in every downloadable archive.
+- Strengthened validation to require the manifest, verify its file inventory and compare declared record counts with actual data.
+- Added package self-checks for exact archive contents, manifest consistency and ZIP integrity.
+- No legal dataset records or website files were changed.
+
 ## 1.2.0 - 2026-11-01
 - Added nine Registration Law article summaries covering compulsory registration, evidentiary effects, unregistered property, urban partition and cadastral mapping.
 - Added references from core property terms to the new article records.
@@ -19,6 +25,6 @@
 - Created an independent, data-only Iranian legal research library.
 - Prioritized real-estate registration and property terminology.
 - Included cheque, Sayad cheque and promissory-note terminology in v1.
-- Added civil law, civil procedure, criminal law, laws, article summaries, taxonomy and relations.
+- Added civil law, civil procedure, criminal law, article summaries, taxonomy and relations.
 - Added a Python standard-library validator suitable for Termux.
 - Marked records for legal review where primary-source consolidation is incomplete.

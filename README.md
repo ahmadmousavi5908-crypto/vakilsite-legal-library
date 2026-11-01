@@ -2,7 +2,7 @@
 
 A versioned, structured Persian-language legal research dataset for Iranian law.
 
-## Version 1.2.0 scope
+## Version 1.2.1 scope
 
 - **Registration and real estate:** priority area, including official and ordinary documents, title deeds, cadastral mapping, parcel identifiers, unregistered property, claim registration and property boundaries.
 - **Cheques and commercial instruments:** included from the first version, including Sayad cheques, registration and transfer, non-payment certificates, promissory notes (سفته), required particulars and protest (واخواست).
@@ -19,9 +19,9 @@ Current dataset: 45 terms, 16 law records and 22 article summaries.
 - `taxonomy/categories.json`: stable subject categories and educational tags.
 - `relations/legal-content-links.json`: links between terms and legal provisions.
 - `schema/record-contracts.json`: JSON Schema contracts for core records.
-- `validation/validate_library.py`: local structural and reference validator.
+- `validation/validate_library.py`: local structural, manifest and reference validator.
 - `reports/source-review.json`: source discovery, current findings and review limitations.
-- `MANIFEST.json`: version, file inventory and record counts.
+- `MANIFEST.json`: version, file inventory and record counts; included in every release archive.
 
 ## Termux validation
 
@@ -33,11 +33,11 @@ From the extracted repository directory, run:
 python validation/validate_library.py
 ```
 
-The validator checks JSON parsing, unique IDs, duplicate canonical terms and cross-references. It does **not** certify legal correctness, the current validity of legislation, completeness of amendments or the current operation of government systems.
+The validator checks JSON parsing, manifest presence and inventory, declared record counts, unique IDs, duplicate canonical terms and cross-references. It does **not** certify legal correctness, the current validity of legislation, completeness of amendments or the current operation of government systems.
 
 ## Downloadable release
 
-Versioned release packages are intended to be generated from a Git tag or the manual GitHub Actions workflow. Each package contains the manifest-listed data, README, changelog and validator, plus a SHA-256 checksum. Verify the checksum before extracting or using the package.
+Versioned release packages are intended to be generated from a Git tag or the manual GitHub Actions workflow. Each package contains MANIFEST.json, the manifest-listed data, README, changelog and validator, plus a SHA-256 checksum. The build process verifies the exact archive inventory, manifest consistency and ZIP integrity. Verify the checksum before extracting or using the package.
 
 The package is data-only. Extract it into a separate directory, never into the Vakilsite website repository.
 
