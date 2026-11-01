@@ -2,14 +2,14 @@
 
 A versioned, structured Persian-language legal research dataset for Iranian law.
 
-## Version 1.0.0 scope
+## Version 1.1.0 scope
 
-- **Registration and real estate:** priority area, including official and ordinary documents, title deeds, cadastral mapping, parcel identifiers, unregistered property, registration claims and property boundaries.
+- **Registration and real estate:** priority area, including official and ordinary documents, title deeds, cadastral mapping, parcel identifiers, unregistered property, claim registration and property boundaries.
 - **Cheques and commercial instruments:** included from the first version, including Sayad cheques, registration and transfer, non-payment certificates, promissory notes (سفته), required particulars and protest (واخواست).
 - Civil law and civil procedure.
 - General and specific criminal law, criminal procedure and criminology.
 
-Initial content: 45 terms, 16 law records and 10 article summaries.
+Current dataset: 45 terms, 16 law records and 13 article summaries.
 
 ## Repository layout
 
@@ -20,7 +20,7 @@ Initial content: 45 terms, 16 law records and 10 article summaries.
 - `relations/legal-content-links.json`: links between terms and legal provisions.
 - `schema/record-contracts.json`: JSON Schema contracts for core records.
 - `validation/validate_library.py`: local structural and reference validator.
-- `reports/source-review.json`: source discovery and review limitations.
+- `reports/source-review.json`: source discovery, current findings and review limitations.
 - `MANIFEST.json`: version, file inventory and record counts.
 
 ## Termux validation
@@ -35,20 +35,33 @@ python validation/validate_library.py
 
 The validator checks JSON parsing, unique IDs, duplicate canonical terms and cross-references. It does **not** certify legal correctness, the current validity of legislation, completeness of amendments or the current operation of government systems.
 
+## Downloadable release
+
+Versioned release packages are intended to be generated from a Git tag or the manual GitHub Actions workflow. Each package contains the manifest-listed data, README, changelog and validator, plus a SHA-256 checksum. Verify the checksum before extracting or using the package.
+
+The package is data-only. Extract it into a separate directory, never into the Vakilsite website repository.
+
 ## Legal review policy
 
 - `verified_primary_source`: checked against an official primary publication for the stated point.
-- `secondary_source_only`: located in a secondary legal source; primary-source confirmation remains necessary.
+- `secondary_source_only`: located in a secondary legal source or an official statement reproduced by a news outlet; primary-source confirmation remains necessary.
 - `needs_legal_review`: legal or editorial review remains.
 - `draft`: incomplete record.
 
 A law's enactment date, publication date, effective date, amendments, transitional rules and implementing regulations are distinct facts. Do not infer one from another.
 
+## Current important caveats
+
+- The launch of the Article 10 claim-registration system has been described as phased. As of the latest reviewed report dated 1405/08/06, the first phase covers a defined group of cadastral deeds; it must not be generalized to every property or every property lawsuit.
+- Article 1 consequences depend on the relevant official launch date, property-document date, type of legal act and statutory exceptions.
+- Cheque analysis must distinguish the cheque-book issue date and the 1400/01/29 amendment to Article 21 bis. Do not infer criminal liability, deadlines or direct enforcement eligibility from a short glossary entry.
+- Promissory-note protest deadlines and recourse consequences require checking the applicable Commercial Code provisions and the facts of the instrument.
+
 ## Source policy
 
-Primary-source verification must prioritize the Official Gazette and the National Laws and Regulations System. Secondary repositories are used for discovery and cross-checking, not as a substitute for official texts.
+Primary-source verification must prioritize the Official Gazette, the National Laws and Regulations System, and official judiciary, Registration Organization and Central Bank publications. Secondary repositories and news reports are used for discovery and cross-checking, not as a substitute for the official text.
 
-The current source-review report explicitly records the limitations of the initial research. In particular, cheque-law deadlines, criminal consequences, Sayad-system rules and the implementation timeline of the compulsory real-estate registration law are not presented as fully verified in this release.
+The source-review report records the limitations and the sources used. No law in this release is certified as fully consolidated against every official amendment and implementing regulation.
 
 ## Safety and use
 
