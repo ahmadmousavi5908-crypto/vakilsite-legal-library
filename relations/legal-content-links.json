@@ -35,6 +35,16 @@
       "from": "term_unofficial_transaction",
       "to": "art_compulsory_registration_01",
       "type": "regulated_by"
+    },
+    {
+      "from": "term_cheque",
+      "to": "art_cheque_law_21_mokarrar",
+      "type": "registered_and_transferred_under"
+    },
+    {
+      "from": "term_unofficial_transaction",
+      "to": "art_compulsory_registration_10",
+      "type": "claim_registration_framework"
     }
   ]
 }
