@@ -156,14 +156,14 @@
       "notes": "رکورد چتری است و در نسخه تکمیلی به اسناد مستقل تفکیک می‌شود."
     },
     {
-      "id": "law_civil_procedure_dummy",
+      "id": "law_execution",
       "title": "قانون اجرای احکام مدنی",
       "jurisdiction": "IR",
       "law_type": "statute_or_code",
       "status": "needs_consolidation_review",
       "review_status": "needs_legal_review",
       "source_url": "https://law-ir.ir/",
-      "notes": "برای جلوگیری از ادعای تنقیح، تاریخ و وضعیت اعتبار تا بررسی رسمی خالی مانده است."
+      "notes": "تاریخ، وضعیت اعتبار و مواد باید با متن رسمی و اصلاحات بررسی شود."
     }
   ]
 }
