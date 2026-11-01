@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0.0",
+  "review_date": "2026-11-01",
+  "summary": "Initial discovery and structuring only. No law in this report is certified as fully consolidated against every official amendment and implementing regulation.",
+  "items": [
+    {
+      "topic": "قانون الزام به ثبت رسمی معاملات اموال غیرمنقول",
+      "status": "secondary_source_only",
+      "note": "اطلاعات انتشار در روزنامه رسمی شماره ۲۳۰۶۸ مورخ ۱۴۰۳/۰۳/۱۷ از منابع ثانویه گردآوری شده است؛ متن رسمی، وضعیت سامانه ماده ۱۰ و مقررات اجرایی باید کنترل شود.",
+      "source": "https://law-ir.ir/law/cat/2036/"
+    },
+    {
+      "topic": "سفته و فته‌طلب",
+      "status": "secondary_source_only",
+      "note": "مواد ۳۰۷ تا ۳۰۹ قانون تجارت به عنوان نقطه شروع ثبت شده‌اند؛ متن رسمی و مقررات مربوط باید تطبیق داده شود.",
+      "source": "https://adlio.ir/law/قانون-تجارت-مصوب-1311-02-13/"
+    },
+    {
+      "topic": "چک و سامانه صیاد",
+      "status": "needs_legal_review",
+      "note": "به علت اصلاحات متعدد، مواعد، مسئولیت‌ها و آثار کیفری در این نسخه قطعی اعلام نشده‌اند.",
+      "source": "https://lawlex.ir/"
+    },
+    {
+      "topic": "قانون مدنی، اسناد",
+      "status": "secondary_source_only",
+      "note": "مواد ۱۲۸۴ و ۱۲۸۷ تا ۱۲۹۳ برای مدل داده اولیه شناسایی شده‌اند.",
+      "source": "https://adlio.ir/law/قانون-مدنی-مصوب-1307-02-18/"
+    }
+  ]
+}
