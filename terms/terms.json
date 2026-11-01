@@ -215,7 +215,7 @@
       "canonical": "معامله غیررسمی ملک",
       "search_title": "معامله قولنامه‌ای ملک",
       "category": "REG",
-      "definition": "معامله‌ای که با سند عادی یا خارج از تشریفات ثبت رسمی انجام شده؛ آثار آن تابع قوانین لازم‌الاجرا و زمان وقوع است.",
+      "definition": "معامله‌ای که با سند عادی یا خارج از تشریفات ثبت رسمی انجام شده است؛ آثار آن به نوع عمل حقوقی، تاریخ وقوع، وضعیت ملک و مقررات لازم‌الاجرا در زمان مربوط وابسته است.",
       "aliases": [
         "معامله با قولنامه"
       ],
@@ -224,7 +224,8 @@
         "law_compulsory_real_estate_registration"
       ],
       "article_refs": [
-        "art_compulsory_registration_01"
+        "art_compulsory_registration_01",
+        "art_compulsory_registration_10"
       ],
       "review_status": "needs_legal_review",
       "sources": [],
@@ -300,7 +301,8 @@
         "law_cheque"
       ],
       "article_refs": [
-        "art_commercial_code_310"
+        "art_commercial_code_310",
+        "art_cheque_law_21_mokarrar"
       ],
       "review_status": "needs_legal_review",
       "sources": [],
