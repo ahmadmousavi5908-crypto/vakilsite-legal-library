@@ -45,6 +45,6 @@ jobs:
             exit 1
           fi
           gh release create "v$VERSION" dist/*.zip dist/*.sha256 \
-            --verify-tag \
+            --target "$GITHUB_SHA" \
             --title "Iranian Legal Research Library v$VERSION" \
             --notes-file CHANGELOG.md
