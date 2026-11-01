@@ -1,0 +1,50 @@
+name: Build legal library release
+
+on:
+  push:
+    tags:
+      - "v*"
+  workflow_dispatch:
+    inputs:
+      version:
+        description: "Release version, for example 1.1.0"
+        required: true
+        type: string
+
+permissions:
+  contents: write
+
+jobs:
+  package:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out source
+        uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+
+      - name: Validate library
+        run: python3 validation/validate_library.py
+
+      - name: Build deterministic package
+        run: python3 tools/build_release.py dist
+
+      - name: Publish GitHub release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          INPUT_VERSION: ${{ inputs.version }}
+          REF_NAME: ${{ github.ref_name }}
+        run: |
+          VERSION="${INPUT_VERSION:-${REF_NAME#v}}"
+          if [ -z "$VERSION" ]; then
+            echo "Release version is missing" >&2
+            exit 1
+          fi
+          if [ "$(python3 -c 'import json; print(json.load(open("MANIFEST.json", encoding="utf-8"))["version"])')" != "$VERSION" ]; then
+            echo "Requested release version does not match MANIFEST.json" >&2
+            exit 1
+          fi
+          gh release create "v$VERSION" dist/*.zip dist/*.sha256 \
+            --verify-tag \
+            --title "Iranian Legal Research Library v$VERSION" \
+            --notes-file CHANGELOG.md
