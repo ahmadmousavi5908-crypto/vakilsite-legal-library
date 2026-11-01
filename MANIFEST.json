@@ -12,12 +12,14 @@
     "laws/laws.json",
     "articles/articles.json",
     "relations/legal-content-links.json",
-    "validation/validate_library.py"
+    "validation/validate_library.py",
+    "schema/record-contracts.json",
+    "reports/source-review.json"
   ],
   "counts": {
-    "terms": 0,
-    "laws": 0,
-    "articles": 0
+    "terms": 45,
+    "laws": 16,
+    "articles": 10
   },
   "review_policy": "All legal records require review unless explicitly verified against primary sources. Not legal advice.",
   "runtime": "Python 3 standard library only; no npm packages."
