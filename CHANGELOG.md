@@ -6,6 +6,8 @@
 - Added summaries for Article 10 of the compulsory real-estate registration law and Articles 4 and 21 bis of the Cheque Issuance Law.
 - Recorded the 1400/01/29 cheque-law amendment affecting the Sayad registration and transfer rules.
 - Linked cheque and unregistered-property terms to the additional legal provisions.
+- Added deterministic ZIP packaging and SHA-256 generation for versioned releases.
+- Added a GitHub Actions workflow to validate and publish release assets.
 - Kept legal statuses at secondary-source level; no blanket primary-source consolidation claim is made.
 
 ## 1.0.0 - 2026-11-01
