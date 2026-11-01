@@ -4,7 +4,7 @@
   "schema_version": "1.0.0",
   "language": "fa-IR",
   "jurisdiction": "IR",
-  "release_status": "research_update_not_released",
+  "release_status": "research_dataset_candidate",
   "created_at": "2026-11-01",
   "files": [
     "taxonomy/categories.json",
