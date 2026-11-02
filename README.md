@@ -2,14 +2,14 @@
 
 A versioned, structured Persian-language legal research dataset for Iranian law.
 
-## Version 1.3.0 scope
+## Version 1.3.1 scope
 
 - **Registration and real estate:** priority area, including official and ordinary documents, title deeds, cadastral mapping, parcel identifiers, unregistered property, claim registration and property boundaries.
 - **Cheques and commercial instruments:** included from the first version, including Sayad cheques, registration and transfer, non-payment certificates, promissory notes (سفته), required particulars and protest (واخواست).
 - Civil law and civil procedure.
 - General and specific criminal law, criminal procedure and criminology.
 
-Current dataset: 102 terms, 16 law records and 22 article summaries across the original 16 subject areas plus court institutions, procedural roles and legal services. The 64-entry legacy glossary was reconciled: 7 overlapping canonical terms were merged and 57 unique terms were added without deleting the original glossary.
+Current dataset: 132 terms, 16 law records and 22 article summaries across all 19 taxonomy groups. The 64-entry legacy glossary was reconciled: 7 overlapping canonical terms were merged and 57 unique terms were added. Thirty further terms cover labor, tax, insurance, administrative and digital-law topics. The 64-entry legacy glossary was reconciled: 7 overlapping canonical terms were merged and 57 unique terms were added without deleting the original glossary.
 
 ## Repository layout
 
