@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.2.2 - 2026-11-02
+- Added 135 curated Persian search phrases across all 45 existing legal terms.
+- Kept every term under its existing legal-review status; search enrichment does not certify legal accuracy or enable indexing.
+- Strengthened validation and the term schema to reject missing, empty, or duplicate search phrases.
+
 ## 1.2.1 - 2026-11-01
 - Fixed release packaging so MANIFEST.json is included in every downloadable archive.
 - Strengthened validation to require the manifest, verify its file inventory and compare declared record counts with actual data.
