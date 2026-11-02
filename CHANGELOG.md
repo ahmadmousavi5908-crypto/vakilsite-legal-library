@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.3.1 - 2026-11-02
+- Expanded the library to 132 terms and 353 curated search phrases across all 19 taxonomy groups.
+- Added draft entries for labor, tax, insurance, administrative and digital-law topics.
+- Kept all newly added entries in legal-review status with no primary-source verification; no new entry is eligible for indexing until its legal content is checked against official sources.
+
 ## 1.3.0 - 2026-11-02
 - Expanded the legal term collection from 45 to 102 records by reconciling the previous 64-entry glossary.
 - Merged 7 overlapping canonical terms and added 57 unique legacy terms without deleting the original glossary.
