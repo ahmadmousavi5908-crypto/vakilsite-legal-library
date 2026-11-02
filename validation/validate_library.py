@@ -75,6 +75,8 @@ missing_required = sorted(required_manifest_files - set(manifest_files))
 if missing_required:
     add_error(f"Manifest inventory omits required files: {', '.join(missing_required)}")
 
+taxonomy = data.get("taxonomy/categories.json", {}).get("categories", [])
+category_codes = {item.get("code") for item in taxonomy if isinstance(item, dict)}
 terms = data.get("terms/terms.json", {}).get("records", [])
 laws = data.get("laws/laws.json", {}).get("records", [])
 articles = data.get("articles/articles.json", {}).get("records", [])
@@ -117,6 +119,8 @@ for term in terms:
         canonical[key] = term.get("id")
     if term.get("review_status") not in {"verified_primary_source", "secondary_source_only", "needs_legal_review", "draft"}:
         add_error(f"Invalid review status: {term.get('id')}")
+    if term.get("category") not in category_codes:
+        add_error(f"Unknown category {term.get('category')} in {term.get('id')}")
     phrases = term.get("search_phrases")
     if not isinstance(phrases, list) or not phrases:
         add_error(f"Missing search phrases: {term.get('id')}")
@@ -166,6 +170,7 @@ report = {
     "manifest_version": version,
     "manifest_files": len(manifest_files),
     "terms": len(terms),
+    "categories": len(category_codes),
     "laws": len(laws),
     "articles": len(articles),
     "search_phrases": sum(len(item.get("search_phrases", [])) for item in terms if isinstance(item, dict)),
