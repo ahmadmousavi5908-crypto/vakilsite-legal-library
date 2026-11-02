@@ -19,7 +19,9 @@
   "counts": {
     "terms": 102,
     "laws": 16,
-    "articles": 22
+    "articles": 22,
+    "categories": 19,
+    "search_phrases": 263
   },
   "review_policy": "All legal records require review unless explicitly verified against primary sources. Not legal advice.",
   "runtime": "Python 3 standard library only; no npm packages.",
