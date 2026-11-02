@@ -137,6 +137,10 @@ for term in terms:
         if ref not in article_ids:
             add_error(f"Unknown article reference {ref} in {term.get('id')}")
 
+used_category_codes = {item.get("category") for item in terms if isinstance(item, dict)}
+for code in sorted(category_codes - used_category_codes):
+    add_error(f"Taxonomy category has no term records: {code}")
+
 for article in articles:
     if isinstance(article, dict) and article.get("law_id") not in law_ids:
         add_error(f"Unknown law for article {article.get('id')}")
@@ -171,6 +175,7 @@ report = {
     "manifest_files": len(manifest_files),
     "terms": len(terms),
     "categories": len(category_codes),
+    "covered_categories": len(used_category_codes),
     "laws": len(laws),
     "articles": len(articles),
     "search_phrases": sum(len(item.get("search_phrases", [])) for item in terms if isinstance(item, dict)),
