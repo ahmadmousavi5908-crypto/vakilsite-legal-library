@@ -117,6 +117,15 @@ for term in terms:
         canonical[key] = term.get("id")
     if term.get("review_status") not in {"verified_primary_source", "secondary_source_only", "needs_legal_review", "draft"}:
         add_error(f"Invalid review status: {term.get('id')}")
+    phrases = term.get("search_phrases")
+    if not isinstance(phrases, list) or not phrases:
+        add_error(f"Missing search phrases: {term.get('id')}")
+    else:
+        normalized_phrases = [normalize(value) for value in phrases if isinstance(value, str)]
+        if len(normalized_phrases) != len(phrases) or any(not value for value in normalized_phrases):
+            add_error(f"Invalid search phrase value: {term.get('id')}")
+        if len(normalized_phrases) != len(set(normalized_phrases)):
+            add_error(f"Duplicate search phrases: {term.get('id')}")
     for ref in term.get("law_refs", []):
         if ref not in law_ids:
             add_error(f"Unknown law reference {ref} in {term.get('id')}")
@@ -159,6 +168,7 @@ report = {
     "terms": len(terms),
     "laws": len(laws),
     "articles": len(articles),
+    "search_phrases": sum(len(item.get("search_phrases", [])) for item in terms if isinstance(item, dict)),
     "errors": ERRORS,
 }
 print(json.dumps(report, ensure_ascii=False, indent=2))
