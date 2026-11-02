@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.3.0 - 2026-11-02
+- Expanded the legal term collection from 45 to 102 records by reconciling the previous 64-entry glossary.
+- Merged 7 overlapping canonical terms and added 57 unique legacy terms without deleting the original glossary.
+- Added court institutions, procedural roles and legal services taxonomy groups.
+- Curated 263 search phrases across all 102 terms.
+- Kept migrated records in legal-review status with no primary-source verification; they remain excluded from indexing until reviewed.
+
 ## 1.2.2 - 2026-11-02
 - Added 135 curated Persian search phrases across all 45 existing legal terms.
 - Kept every term under its existing legal-review status; search enrichment does not certify legal accuracy or enable indexing.
