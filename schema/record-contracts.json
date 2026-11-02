@@ -14,7 +14,8 @@
         "aliases",
         "law_refs",
         "article_refs",
-        "review_status"
+        "review_status",
+        "search_phrases"
       ],
       "properties": {
         "id": {
@@ -45,8 +46,10 @@
         "search_phrases": {
           "type": "array",
           "items": {
-            "type": "string"
-          }
+            "type": "string",
+            "minLength": 2
+          },
+          "minItems": 1
         },
         "law_refs": {
           "type": "array",
